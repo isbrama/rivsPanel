@@ -1,0 +1,148 @@
+/*principal*/
+.img1 {
+  width: 25px;
+  float: left;
+  animation: image 4s linear 0s infinite normal;
+}
+
+.img2 {
+  width: 25px;
+  float: right;
+  animation: image 4s linear 0s infinite reverse;
+}
+
+.badge{
+  animation: badge 2s ease 0s infinite reverse !important;
+}
+
+/* css principal animation */
+@keyframes image {
+  from {
+    transform: rotate(0deg);
+  }
+
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+@keyframes badge{
+  from {
+    opacity: 0.5;
+  }
+
+  to {
+  opacity: 1;
+  }
+}
+
+.fa-trash-alt:hover, .fa-minus:hover, .fa-caret-square-left:hover{
+  color: #d9534f  !important;
+}
+
+.fa-plus:hover, .fa-user-plus:hover, .fa-plus-square:hover{
+  color: #5cb85c  !important;
+}
+.fa-edit:hover{
+  color:  #5bc0de !important;
+}
+
+.fa-eye:hover{
+  color: #0275d8  !important;
+}
+
+
+/**********************************Table*******************************************************************/
+#tableGestion {
+  border-collapse: collapse;
+  width: 100%;
+  border-radius: 2px; /*ajoutee*/
+  overflow: hidden;  /*ajoutee*/
+}
+
+#tableGestion td, #tableGestion th {
+  /*border: 1px solid #4A7C64;*/
+  padding: 5px;
+  text-align: center;
+  /*border-bottom: 2px solid white;*/
+}
+
+#tableGestion tr {
+  background-color: #f2f2f2;
+}
+
+#tableGestion tr:hover {
+  background-color:#eaeaea;
+  color: #000;
+}
+
+#tableGestion th {
+  padding-top: 10px;
+  padding-bottom: 10px;
+  background-color: #38a66f;
+  color: white;
+}
+
+#tableGestion a {
+  width: 100px;
+}
+
+#tableGestion td img {
+  text-align: center;
+  display: block;
+  width:60px;
+  height:60px;
+  margin: 0 auto;
+  border-radius: 1px;
+}
+
+.input-wrapper {
+  position: relative
+}
+
+.input-wrapper input {
+  width: 130px;
+  border-radius: 2px;
+  border: none;
+}
+
+.input-wrapper input::placeholder {
+  color: #d1d1d1;
+}
+
+.fa-search-plus {
+  position: absolute;
+  top: 5px;
+  right:0px;
+  color: #d1d1d1;
+}
+
+
+/*modal*/
+.modal-dialog {
+  border-radius: .3rem;
+  width: 376px;
+}
+
+.modal-dialog, .modal-content, .modal-body, .modal-header, .modal-footer {
+  background: #f2f2f2;
+}
+
+/*******************************************card******************************************************/
+.card-product {
+  margin-bottom: 15px;
+  width: 13rem;
+  border: 1px solid #4A7C64 !important;
+}
+
+.card-top{
+  width: 100%!important;
+  height: 200px!important;
+  object-fit: cover;
+}
+
+.card-product-body{
+  background:#242931;
+  color:white;
+  text-align:center;
+}
